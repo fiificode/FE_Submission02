@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    height: 100vh;
+}
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background-color: lightgray;
+}
+button{
+    background: transparent;
+    cursor: pointer;
+}
+.control{
+    outline: none;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background: transparent;
+    font-family: inherit;
+}
+.login-card{
+    width: 400px;
+    padding: 40px 30px 64px;
+    border: 4px solid gray;
+}
+.headers{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 6px;
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+.login-card > h2{
+    font-size: 36px;
+    color: gray;
+    font-weight: 400;
+    text-align: center;
+}
+.login-form{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+.login-form input, .control::placeholder{
+    font-size: 20px;
+}
+.login-form > button{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    border-color: gray;
+}

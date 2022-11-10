@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: lightgray;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.dashboard-container{
+    width: 100vw;
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    height: 100vh;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    border-right: 1px solid gray;
+    gap: 40px;
+}
+
+.sidebar img{
+    width: 80px;
+    height: 80px;
+}
+.sidebar > .menu li{
+    margin-bottom: 20px;
+}
+
+.content{
+    flex: 8;
+    width: 100%;
+    padding: 20px 40px;
+    overflow: auto;
+}
+.content h2{
+    font-weight: 300;
+}
+.summary-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.summary-card{
+    width: 280px;
+    padding: 20px;
+    border: 2px solid gray;
+    margin: 30px 0;
+}
+.summary-card h2{
+    font-size: 12px;
+}
+.revenue-summary{
+    display: flex;
+    align-items: center;
+    gap: 600px;
+}
+.cont input{
+    display: none;
+}
+.cont{
+    position: relative;
+    /* top: 50vh;
+    left: 50%; */
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 2px;
+    display: block;
+    cursor: pointer;
+    overflow:hidden;
+    transition: 0.3s;
+}
+.switch::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #adadb1;
+    z-index: -1;
+    transition: inherit;
+}
+.switch{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: rgb(110, 109, 109);
+    border-radius: 50%;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: inherit;
+}
+.cont input:checked ~ .switch{
+    background: #34c759;
+}
+.cont input:checked ~ .switch{
+    margin-left: calc(100% - 36px);
+}
+.graph-container{
+    width: 80%;
+    height: 300px;
+    border: 2px solid gray;
+    margin-top: 20px;
+}
+

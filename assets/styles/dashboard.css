@@ -7,9 +7,8 @@ body{
 }
 a{
     text-decoration: none;
-}
-li{
-    list-style: none;
+    color: gray;
+    font-size: 20px;
 }
 .dashboard-container{
     width: 100vw;
@@ -31,8 +30,11 @@ li{
     width: 80px;
     height: 80px;
 }
-.sidebar > .menu li{
-    margin-bottom: 20px;
+.sidebar > .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
 }
 
 .content{

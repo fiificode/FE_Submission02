@@ -45,7 +45,7 @@ loginBtn.addEventListener("click", (e) => {
             localStorage.setItem('refresh_token', data.refresh_token)
             window.location.href('./pages/dashboard.html');
         }).catch(function(error){
-            alert('Wrong credentials')
+            // alert('Wrong credentials')
             location.reload();
         });
     }

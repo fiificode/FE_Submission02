@@ -102,11 +102,9 @@ a{
     transition: inherit;
 }
 .cont input:checked ~ .switch{
-    background: #34c759;
+    background: gray;
 }
-.cont input:unchecked ~ .switch{
-    background: inherit;
-}
+
 .cont input:checked ~ .switch{
     margin-left: calc(100% - 36px);
 }
@@ -119,3 +117,34 @@ a{
     width: 100%;
     height: 40%;
 }
+
+.bestseller-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 980px; 
+    height: 300px;
+    overflow: auto;
+  }
+  
+  table {
+    border-style: solid;
+    border-color: #C3C3C3;
+    background-color: #D8D8D8;
+  }
+  
+  .table thead th {
+    text-align: start;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 22px;
+    border-bottom: 3px solid gray;
+  }
+  
+  .table td {
+    padding: 10px 20px;
+  }
+  
+  .product{
+    font-weight: 400;
+  }

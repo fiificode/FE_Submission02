@@ -13,10 +13,53 @@
         <link rel="stylesheet" href="../assets/styles/orders.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+       <div class="order-container">
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="../assets/images/Freddys_Logo.svg" alt="logo">
+                </div>
+                <div class="menu">
+                <a href="/pages/Dashboard.html">Dashboard</a>
+                <a href="/pages/Orders.html">Orders</a>
+                <a href="/index.html" id="logOut">Logout</a>
+                </div>
+            </div>
+            <div class="orders">
+                <div class="top">
+                    <h1>Orders</h1>
+                    <div class="search-container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="search-input" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="orders-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Date</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                <tbody id="table_body">
+                </tbody>
+                </table>
+                </div>
+                <nav class="page">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <button class="page-link" id="previousButton">Previous</button>
+                        </li>
+                        <li class="page-item">
+                            <button class="page-link" id="nextButton">Next</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+       </div>
         
-        <script src="" async defer></script>
+        <script src="/js/orders.js" async defer></script>
     </body>
 </html>

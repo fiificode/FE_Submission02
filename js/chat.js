@@ -41,7 +41,7 @@ fetch(url1, {
                 labels: labels1,
                 datasets: [{
                     label: 'Revenue',
-                    backgroundColor: 'rgb(255 136 0)',
+                    backgroundColor: 'gray',
                     borderColor: 'rgb(255, 99, 132)',
                     data: values1,
                 }]

@@ -63,7 +63,7 @@ a{
 .revenue-summary{
     display: flex;
     align-items: center;
-    gap: 600px;
+    gap: 330px;
 }
 .cont input{
     display: none;
@@ -104,13 +104,18 @@ a{
 .cont input:checked ~ .switch{
     background: #34c759;
 }
+.cont input:unchecked ~ .switch{
+    background: inherit;
+}
 .cont input:checked ~ .switch{
     margin-left: calc(100% - 36px);
 }
 .graph-container{
-    width: 80%;
-    height: 300px;
+    width: 500px;
     border: 2px solid gray;
     margin-top: 20px;
 }
-
+.graph-container > .graph{
+    width: 100%;
+    height: 40%;
+}

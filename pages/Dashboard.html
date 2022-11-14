@@ -36,19 +36,25 @@
                     <span id="last_month"></span>
                 </div>
             </div>
+
+
             <div class="revenue-summary">
-                <h2>Revenue(last 7 days)</h2>
+                <h2 id="revenue-title"></h2>
                 <label class="cont">
-                    <input type="checkbox">
+                    <input id="checkbtn" type="checkbox" />
                     <div class="switch"></div>
                 </label>
             </div>
             <div class="graph-container">
-                Graph
+                <div class="graph">
+                    <canvas id="myChart"></canvas>
+                </div>
             </div>
+
+
             <div class="bestseller-container">
                 <h2>Bestsellers</h2>
-                <div class="items-table">
+                <!-- <div class="items-table">
                     <table>
                         <tbody>
                             <thead>
@@ -62,12 +68,16 @@
                         </tbody>
                         
                         
-                    </table>
+                    </table> -->
                 </div>
             </div>
         </div>
       </div>
         
         <script src="../js/dashboard.js" async defer></script>
+        <script src="../js/chat.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      
     </body>
 </html>
